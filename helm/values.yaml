@@ -2,5 +2,5 @@ color: red
 deploymentName: colorapp-deployment
 image: docker.io/ravismail/color-demo:1.0
 replicas: 1
-serviceName: hello-service
-servicetype: NodePort
+serviceName: colorapp-svc
+servicetype: LoadBalancer
