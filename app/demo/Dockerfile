@@ -13,5 +13,6 @@ COPY --from=build /app/target/color-demo-0.0.1-SNAPSHOT.jar app.jar
 # Expose app port
 EXPOSE 8080
 
+
 # Run with dynamic color
 ENTRYPOINT ["java", "-jar", "app.jar"]
