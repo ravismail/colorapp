@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class DemoApplication {
 
-    @Value("${COLOR:blue}") // default color = blue
+    @Value("${COLOR:red}") // default color = blue
     private String color;
 
     @GetMapping("/")
