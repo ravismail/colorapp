@@ -1,7 +1,7 @@
 color: green
 nameSpace: colorapp
 deploymentName: colorapp-deployment
-image: docker.io/ravismail/hoa-colourapp:1.0.42
+image: docker.io/ravismail/hoa-colourapp:1.0.44
 replicas: 1
 serviceName: colorapp-svc
 servicetype: LoadBalancer
