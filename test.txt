@@ -1,1 +1,84 @@
 
+
+action
+-  Refine RACI matrix using GPT for financial system roles within one week
+-  Send email instructions to all 7 users for authentication testing with screenshots
+-  Set up second dev environment for vendor testing (Madhu lead, Anusha backup)
+-  Schedule technical meeting tomorrow 10:00-10:30 AM (Ravi, Madhu, Dimitri)
+-  Implement config maps for Kubernetes containers (high priority)
+-  Fix UI service to call API service internally via core DNS (high priority)
+-  Verify SharePoint access for all team members
+-  Update Excel tracker with single tab and status filters
+-  Continue browser compatibility testing with multiple users and screenshots
+-  Deploy latest fixes to new dev environment for validation
+
+
+summary
+## RACI Matrix and Role Refinement Discussion
+- Current table structure needs improvement for clarity
+  - Generic user role is confusing for auditors
+  - Suggested roles: admin/owner, power users, read-only
+  - Need to use GPT to define best roles for financial systems
+- Will refine current matrix to proper RACI format within one week
+- Document sharing planned via email for review
+
+## Daily Progress Updates and Email Communication
+- Progress updates coming from Central Alarm with subject "PBT"
+- Ram started CSS submit process for daily updates
+- Confirmed receipt of progress tracking emails
+
+## User Authentication and Authorization Issues (Item 4)
+- Status changed from "done" to "in progress - team validation"
+- Application team needs to validate all fixes before marking complete
+- Required: Email instructions to all 7 users with testing screenshots
+- All users must confirm access and functionality
+- Need evidence-based validation with screenshots
+
+## Configuration and Display Issues Resolution
+- Items 5-7 marked "to be validated" pending deployment
+- Display duplication bug in user management interface fixed
+- Browser compatibility issues (Item 9) - working in Chrome today
+  - Possibly caching-related problem
+  - User validation required from multiple team members
+  - Screenshots needed for success/failure documentation
+
+## Deployment Process and Environment Setup
+- Current single dev/staging environment limitation discussed
+- New deployment workflow established:
+  - Report issue to vendor → Excel tracker → Fix on vendor instance → Deploy to Synchrony dev → UAT testing → Production
+- Creating second dev environment for vendor testing before application team validation
+- Madhu leading new environment setup with Anusha as backup
+- Existing environment becomes UAT/staging for application team
+
+## Technical Architecture Priorities (High Priority Items)
+- Item 2: Implement config maps for Kubernetes containers (critical)
+- Item 5: Fix UI service to call API service internally via core DNS
+  - Currently going outside cluster causing cross-domain issues
+  - Complicating ingress setup unnecessarily
+- These fixes required before items 1 and 3 can be completed
+
+## Project Management and Tracking
+- Excel tracker sufficient for now, no over-engineering needed
+- Remove multiple date tabs, use single tracker with filters
+- Filter by status: validated, in progress, open
+- Optional ticket system (Zoho, Jira) for vendor use
+- SharePoint access verification needed
+
+## Technical Meeting Scheduled
+- Tomorrow 10:00-10:30 AM
+- Attendees: Ravi, Madhu, Dimitri (CC)
+- Focus: Kubernetes architecture, config maps, internal service communication
+- Application team optional attendance
+- Meeting notes to be shared post-meeting
+
+## Access and Security Governance
+- Vendor team has Synchrony SSO access for other projects
+- No direct cluster access permitted - only through Ravi
+- Source code in vendor GitHub repository
+- Images scanned via external pipeline before Harbor deployment
+- Segmentation of duties maintained for security
+
+## Browser Compatibility Investigation
+- Issue resolved in incognito mode, suggesting caching problem
+
+
